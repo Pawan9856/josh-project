@@ -1,0 +1,48 @@
+.contact-us {
+  background-color: #F7F8FA;
+  /* display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr)); */
+  display: flex;
+  padding-bottom: 60px;
+}
+
+.contact-us-box {
+  width: 50%;
+  padding: 0 60px 0 120px;
+}
+.contact-us-image {
+  width: 50%;
+}
+
+.contact-us-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+}
+.contact-us-form input {
+  margin-top: 10px;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+
+}
+.contact-us-form textarea {
+  grid-column: span 2;
+  margin-top: 10px;
+  padding: 20px;
+  height: 150px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  resize: none;
+}
+.contact-us-form button {
+  padding: 20px 10px;
+  width: 70%;
+  border-radius: 10px;
+  font-size: medium;
+  color: white;
+  background-color: #1ac073;
+  border: none;
+}
