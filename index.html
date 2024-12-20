@@ -4,31 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="landing-section.css" />
-    <link rel="stylesheet" href="footer.css" />
-    <link rel="stylesheet" href="contact-us.css" />
-    <link rel="stylesheet" href="service-section.css" />
-    <link rel="stylesheet" href="kitchen-section.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/landing-section.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/contact-us.css" />
+    <link rel="stylesheet" href="css/service-section.css" />
+    <link rel="stylesheet" href="css/request-dish-modal.css" />
+    <link rel="stylesheet" href="css/cart-modal.css" />
+    <link rel="stylesheet" href="css/carousel.css" />
+    <link rel="stylesheet" href="css/kitchen-section.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- header section -->
-    <nav class="header">
+    <nav class="header" id="Home">
       <div class="nav-logo">
         <img src="/resource/svg/JTGeats.svg" alt="logo" />
       </div>
       <ul class="nav-menu">
-        <li class="nav-link">Home</li>
-        <li class="nav-link">About</li>
-        <li class="nav-link">Menu</li>
-        <li class="nav-link">Blog</li>
-        <li class="nav-link">Contact</li>
+        <li class="nav-link"><a href="#">Home</a></li>
+        <li class="nav-link"><a href="#About">About</a></li>
+        <li class="nav-link"><a href="#Menu">Menu</a></li>
+        <li class="nav-link"><a href="#Blog">Blog</a></li>
+        <li class="nav-link"><a href="#Contact">Contact</a></li>
       </ul>
       <div class="nav-btn">
         <button class="search">
@@ -38,11 +45,19 @@
           <img src="/resource/svg/akar-icons_shopping-bag.svg" alt="logo" />
         </button>
       </div>
+      <div class="cart-modal-container">
+        <div class="cart-modal">
+          <img src="/resource/svg/akar-icons_shopping-bag.svg" alt="logo" />
+          <h1>Cart is Empty</h1>
+          <p>Add some items to the cart to checkout</p>
+          <button class="back-to-menu">Back to Menu</button>
+        </div>
+      </div>
     </nav>
 
     <!-- landing section -->
 
-    <section class="landing-section">
+    <section class="landing-section" id="About">
       <div class="hero-display">
         <h1 class="hero-title">Authentic Home food in India</h1>
         <p class="hero-description">
@@ -69,40 +84,188 @@
 
     <!-- kitchen section -->
 
-    <section class="kitchen-section">
+    <section class="kitchen-section" id="Menu">
       <h1 class="kitchen-title">Home Kitchen</h1>
-      <div class="kitchen-items">
-        
+      <div class="kitchen-items"></div>
+      <div class="popular-item">
+        <h1>Popular Items</h1>
+        <div class="popular-item-carousel">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper-image">
+                  <img src="/resource/images/unsplash_CbNAuxSZTFo.png" alt="" />
+                </div>
+                <div class="popular-item-card-info">
+                  <span class="title">Home made Pizza</span>
+                  <span>$8</span>
+                  <div class="popular-item-card-rating">
+                    <span class="badge">
+                      <img
+                        src="/resource/svg/ant-design_star-filled.svg"
+                        alt="star"
+                      />4.7
+                    </span>
+                    <span class="badge">30-45 min</span>
+                  </div>
+                  <div class="popular-item-card-button">
+                    <button>
+                      <img
+                        src="/resource/svg/iconoir_add-to-cart-2.svg"
+                        alt="add to cart"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="swiper-image">
+                  <img src="/resource/images/unsplash_60nzTP7_hMQ.png" alt="" />
+                </div>
+                <div class="popular-item-card-info">
+                  <span class="title">Home made Pizza</span>
+                  <span>$8</span>
+                  <div class="popular-item-card-rating">
+                    <span class="badge">
+                      <img
+                        src="/resource/svg/ant-design_star-filled.svg"
+                        alt="star"
+                      />4.7
+                    </span>
+                    <span class="badge">30-45 min</span>
+                  </div>
+                  <div class="popular-item-card-button">
+                    <button>
+                      <img
+                        src="/resource/svg/iconoir_add-to-cart-2.svg"
+                        alt="add to cart"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="swiper-image">
+                  <img src="/resource/images/unsplash_sejqj6Eaqe8.png" alt="" />
+                </div>
+                <div class="popular-item-card-info">
+                  <span class="title">Home made Pizza</span>
+                  <span>$8</span>
+                  <div class="popular-item-card-rating">
+                    <span class="badge">
+                      <img
+                        src="/resource/svg/ant-design_star-filled.svg"
+                        alt="star"
+                      />4.7
+                    </span>
+                    <span class="badge">30-45 min</span>
+                  </div>
+                  <div class="popular-item-card-button">
+                    <button>
+                      <img
+                        src="/resource/svg/iconoir_add-to-cart-2.svg"
+                        alt="add to cart"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="swiper-image">
+                  <img
+                    src="/resource/images/unsplash_MqT0asuoIcU-1.png"
+                    alt=""
+                  />
+                </div>
+                <div class="popular-item-card-info">
+                  <span class="title">Home made Pizza</span>
+                  <span>$8</span>
+                  <div class="popular-item-card-rating">
+                    <span class="badge">
+                      <img
+                        src="/resource/svg/ant-design_star-filled.svg"
+                        alt="star"
+                      />4.7
+                    </span>
+                    <span class="badge">15-20 min</span>
+                  </div>
+                  <div class="popular-item-card-button">
+                    <button>
+                      <img
+                        src="/resource/svg/iconoir_add-to-cart-2.svg"
+                        alt="add to cart"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img
+              src="resource/svg/Arrow.svg"
+              alt=""
+              class="swiper-button-next"
+            />
+            <img
+              src="resource/svg/Arrow-1.svg"
+              alt="next"
+              class="swiper-button-prev"
+            />
+          </div>
+        </div>
+        <button class="request-dish-btn">Request a Dish</button>
       </div>
-      <h1>Popular Items</h1>
-      <div class="popular-item-carousel"></div>
-      <button>Request a Dish</button>
+      <div class="request-dish-modal-container">
+        <div class="request-dish-modal">
+          <h1>Request a Dish</h1>
+
+          <label for="dish-name">Name*</label>
+          <input
+            type="text"
+            placeholder="Enter name of the dish"
+            id="dish-name"
+          />
+          <label for="dish-image">Upload a image</label>
+          <input type="text" placeholder="Paste a url" id="dish-image" />
+          <div class="request-dish-modal-btn">
+            <button class="cancel-btn">Cancel</button>
+            <button class="submit-btn">Submit Request</button>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- service section -->
 
-    <section class="service-section">
+    <section class="service-section" id="Blog">
       <div class="service-description">
-        <h1>We are providing best home cooked food delivery service.</h1>
+        <h1>
+          We are providing best <br />
+          home cooked food delivery service.
+        </h1>
         <p>
           Away from home and craving the tasty homemade recipes? Choose from a
           selection of our delicious home cooked dishes
         </p>
       </div>
-      <div class="sevice-video-container"></div>
+      <div class="sevice-video-container">
+        <video src="resource/videos/pizza_making.mp4" controls></video>
+      </div>
     </section>
 
     <!-- contact us section -->
-    <section class="contact-us">
+    <section class="contact-us" id="Contact">
       <div class="contact-us-box">
-        <div class="">
-          <h1 class="contact-us-title">
-            Do you have a question or want to become a seller?
-          </h1>
-          <p class="contact-us-description">
-            Fill this form and our manager will contact you next 48 hours.
-          </p>
-        </div>
+        <h1 class="contact-us-title">
+          Do you have a question <br />
+          or want to become a seller?
+        </h1>
+        <p class="contact-us-description">
+          Fill this form and our manager will contact you next 48 hours.
+        </p>
+
         <form action="" class="contact-us-form">
           <input type="text" placeholder="Your Name" />
           <input type="text" placeholder="Your e-mail" />
@@ -126,22 +289,27 @@
           <img src="/resource/svg/JTGeats.svg" alt="logo" />
         </div>
         <ul class="footer-menu">
-          <li class="footer-link">Home</li>
-          <li class="footer-link">About</li>
-          <li class="footer-link">Menu</li>
-          <li class="footer-link">Blog</li>
-          <li class="footer-link">Contact</li>
+          <li class="footer-link"><a href="#">Home</a></li>
+          <li class="footer-link"><a href="#About">About</a></li>
+          <li class="footer-link"><a href="#Menu">Menu</a></li>
+          <li class="footer-link"><a href="#Blog">Blog</a></li>
+          <li class="footer-link"><a href="#Contact">Contact</a></li>
         </ul>
         <div class="footer-btn">
           <button class="facebook">
             <img src="/resource/svg/Facebook.svg" alt="logo" />
           </button>
           <button class="instagram">
-            <img src="/resource/svg/Facebook.svg" alt="logo" />
+            <img src="/resource/svg/iconoir_add-to-cart.svg" alt="logo" />
           </button>
         </div>
       </div>
     </footer>
-    <script src="index.js" />
+    <script src="modal.js"></script>
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script src="swiper.js"></script>
   </body>
 </html>

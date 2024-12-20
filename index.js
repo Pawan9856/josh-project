@@ -8,8 +8,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-const kitchenItems = document.querySelector(".kitchen-items");
-console.log("hi ", kitchenItems);
 
 const kitchenItemsData = [
   {
@@ -125,7 +123,6 @@ kitchenItemsData.forEach((item) => {
       </div>
     </div>
   `;
-
-  // Step 5: Append the newly created card to the kitchen items container
+  
   kitchenItemsContainer.appendChild(card);
 });

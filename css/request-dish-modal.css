@@ -1,0 +1,78 @@
+.request-dish-modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  z-index: 10;
+}
+
+.request-dish-modal {
+  background-color: white;
+  width: 100%;
+  margin: 60px;
+  margin-top: 90px;
+  padding: 50px 100px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.request-dish-modal h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 100px;
+}
+
+.request-dish-modal input {
+  background-color: #f7f8fa;
+  border: none;
+  padding: 16px 16px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.request-dish-modal-btn {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.request-dish-modal-btn button {
+  min-width: 200px;
+  padding: 20px 40px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.request-dish-modal-btn .cancel-btn {
+  background-color: #ffffff;
+  color: #1ac073;
+  border: 2px solid #1ac073;
+}
+
+.request-dish-modal-btn .submit-btn {
+  background-color: #1ac073;
+  color: #ffffff;
+  border: none;
+}
+
+.request-dish-modal-btn .cancel-btn:hover {
+  color: #14a05f;
+  border: 2px solid #14a05f;
+  transition: all 0.3s ease-in-out;
+  scale: 1.01;
+}
+
+.request-dish-modal-btn .submit-btn:hover {
+  background-color: #14a05f;
+  transition: all 0.3s ease-in-out;
+  scale: 1.01;
+}
